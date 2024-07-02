@@ -1,7 +1,14 @@
 using Loomon.Client.Pages;
 using Loomon.Components;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Register syncfusion licence
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXlccnRXR2ReV0dyX0M=");
+
+//Register syncfusion service
+builder.Services.AddSyncfusionBlazor();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
