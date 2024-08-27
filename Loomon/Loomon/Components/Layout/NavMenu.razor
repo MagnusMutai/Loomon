@@ -1,2 +1,34 @@
-﻿
+﻿@rendermode InteractiveServer
 
+<SfSidebar Width="250px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
+    <ChildContent>
+
+        <a href="~/icons/left-bar/left-bar-toggle.svg" @onclick="ToggleSidebar"></a>
+
+        <div style="text-align: center;" class="text-content"> Sidebar </div>
+    </ChildContent>
+</SfSidebar>
+
+<style>
+
+    .e-sidebar {
+        background-color: #f8f8f8;
+        color: black;
+    }
+
+    .main > div {
+        padding: 0px !important;
+    }
+
+</style>
+
+
+@code{
+    private bool isSidebarOpen = false;
+
+    private void ToggleSidebar()
+    {
+        // Toggle the sidebar's open state using a ternary operator
+        isSidebarOpen = isSidebarOpen ? false : true;
+    }
+}
