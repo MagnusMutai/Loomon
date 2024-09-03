@@ -1,51 +1,48 @@
 ﻿@rendermode InteractiveServer
 
-<SfSidebar Width="250px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
+<SfSidebar ID="LeftBar" Width="250px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
     <ChildContent>
 
         <a @onclick="ToggleSidebar" class="nav-toggler">
             <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
         </a>
 
-        <div>
-            <a @onclick="ToggleSidebar" class="nav-toggler">
-                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+        <div class="top-bar-icons">
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt="">
             </a>
-            <a @onclick="ToggleSidebar" class="nav-toggler">
-                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
             </a>
-            <a @onclick="ToggleSidebar" class="nav-toggler">
-                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/phone-icon.svg" alt="">
             </a>
-            <a @onclick="ToggleSidebar" class="nav-toggler">
-                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="">
+            </a>
+        </div>
+
+        <div class="bottom-bar-icons">
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/settings-icon.svg" alt="">
+            </a>
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/profile-icon.svg" alt="">
             </a>
         </div>
 
         <div style="text-align: center;" class="text-content"> Sidebar </div>
     </ChildContent>
 </SfSidebar>
-
 <style>
-
-    .nav-toggler {
-        position: absolute;
-        top: 60px;
-        left: 15px;
-    }
-
-    .e-sidebar {
+    #LeftBar {
         background-color: rgba(0, 0, 0, 0.9);
         color: beige;
         overflow: hidden;
+        border-radius: 15px 0 0 15px;
+        border-right: 1px solid #1B7794;
     }
-
-/*     .main > div {
-        padding: 0px !important;
-    } */
-
 </style>
-
 
 @code{
     private bool isSidebarOpen = false;

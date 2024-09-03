@@ -1,0 +1,28 @@
+.nav-toggler {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+}
+
+.top-bar-icons {
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom-bar-icons {
+    position: absolute;
+    bottom: 110px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left-bar-icon {
+    width: 18px;
+    height: px;
+}
