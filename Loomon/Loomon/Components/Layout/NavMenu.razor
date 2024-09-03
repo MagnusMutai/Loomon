@@ -3,7 +3,24 @@
 <SfSidebar Width="250px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
     <ChildContent>
 
-        <a href="~/icons/left-bar/left-bar-toggle.svg" @onclick="ToggleSidebar"></a>
+        <a @onclick="ToggleSidebar" class="nav-toggler">
+            <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+        </a>
+
+        <div>
+            <a @onclick="ToggleSidebar" class="nav-toggler">
+                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            </a>
+            <a @onclick="ToggleSidebar" class="nav-toggler">
+                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            </a>
+            <a @onclick="ToggleSidebar" class="nav-toggler">
+                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            </a>
+            <a @onclick="ToggleSidebar" class="nav-toggler">
+                <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            </a>
+        </div>
 
         <div style="text-align: center;" class="text-content"> Sidebar </div>
     </ChildContent>
@@ -11,14 +28,21 @@
 
 <style>
 
-    .e-sidebar {
-        background-color: #f8f8f8;
-        color: black;
+    .nav-toggler {
+        position: absolute;
+        top: 60px;
+        left: 15px;
     }
 
-    .main > div {
-        padding: 0px !important;
+    .e-sidebar {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: beige;
+        overflow: hidden;
     }
+
+/*     .main > div {
+        padding: 0px !important;
+    } */
 
 </style>
 
