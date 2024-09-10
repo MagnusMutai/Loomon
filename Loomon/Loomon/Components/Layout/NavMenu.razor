@@ -4,15 +4,16 @@
     <ChildContent>
 
         <a @onclick="ToggleSidebar" class="nav-toggler">
-            <img src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <img class="left-bar-icon" src="/icons/left-bar/leftbar-toggle.svg" alt="">
         </a>
 
         <div class="top-bar-icons">
             <a @onclick="ToggleSidebar">
                 <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt="">
             </a>
-            <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
+            <a @onclick="ToggleSidebar" class="">
+                <img class="left-bar-icon message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
+                <span class="e-badge e-badge-overlap">1</span>
             </a>
             <a @onclick="ToggleSidebar">
                 <img class="left-bar-icon" src="/icons/left-bar/phone-icon.svg" alt="">

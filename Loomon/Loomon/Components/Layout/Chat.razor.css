@@ -2,4 +2,5 @@
     width: 290px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
 }

@@ -1,28 +1,50 @@
 .nav-toggler {
     position: absolute;
     top: 60px;
-    left: 15px;
+    left: 10px;
 }
 
 .top-bar-icons {
     position: absolute;
     top: 120px;
-    left: 15px;
+    left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .bottom-bar-icons {
     position: absolute;
     bottom: 110px;
-    left: 15px;
+    left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .left-bar-icon {
     width: 18px;
-    height: px;
+    height: 18px;
+
+}
+
+    .left-bar-icon:hover {
+        background-size: 60px 60px;
+    }
+
+
+    a {
+        display: flex;
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+    }
+
+    a:hover {
+        border-radius: 5px;
+        background-color: rgba(91, 138, 228, 0.34);
+    }
+
+.message-icon {
+    position: relative;
 }
