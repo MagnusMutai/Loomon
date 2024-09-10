@@ -22,19 +22,11 @@
     gap: 10px;
 }
 
-.left-bar-icon {
-    width: 18px;
-    height: 18px;
-
-}
-
-    .left-bar-icon:hover {
-        background-size: 60px 60px;
-    }
 
 
     a {
         display: flex;
+        gap: 35px;
         width: 28px;
         height: 28px;
         padding: 5px;
@@ -45,6 +37,27 @@
         background-color: rgba(91, 138, 228, 0.34);
     }
 
+.left-bar-icon {
+    width: 17px;
+    height: 17px;
+
+}
+
+.description {
+    white-space: nowrap;
+}
+
 .message-icon {
     position: relative;
+}
+
+.message-badge {
+    background-color: rgba(2, 172, 172, 1);
+    margin-top: 40px;
+    font-size: .6rem;
+    cursor: default;
+}
+
+p {
+    margin-top: 1px;
 }
