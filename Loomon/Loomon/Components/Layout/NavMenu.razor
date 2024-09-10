@@ -9,26 +9,30 @@
 
         <div class="top-bar-icons">
             <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt="">
+                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt=""> 
+                <span class="description">Archived Chats</span>
             </a>
             <a @onclick="ToggleSidebar" class="">
-                <img class="left-bar-icon message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
-                <span class="e-badge e-badge-overlap">1</span>
+                <div class="badge-block">
+                    <img class="message-icon" style="height: 20px;" src="/icons/left-bar/double-chat-icon.svg" alt="">
+                    <span class="e-badge e-badge-overlap e-badge-circle message-badge"><p>99+</p></span>
+                    <span class="description">Archived Chats</span>
+                </div>
             </a>
             <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/phone-icon.svg" alt="">
+                <img style="height: 17px;" src="/icons/left-bar/phone-icon.svg" alt="">
             </a>
             <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="">
+                <img src="/icons/left-bar/starred-message-icon.svg" alt="">
             </a>
         </div>
 
         <div class="bottom-bar-icons">
             <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/settings-icon.svg" alt="">
+                <img style="width: 17px;" src="/icons/left-bar/settings-icon.svg" alt="">
             </a>
             <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/profile-icon.svg" alt="">
+                <img style="height: 17px;" src="/icons/left-bar/profile-icon.svg" alt="">
             </a>
         </div>
 
