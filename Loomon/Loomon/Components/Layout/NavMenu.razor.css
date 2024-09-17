@@ -1,3 +1,12 @@
+::deep #LeftBar {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: beige;
+    overflow: hidden;
+    height: 100vh;
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid #1B7794;
+}
+
 .nav-toggler {
     position: absolute;
     top: 60px;
@@ -25,37 +34,49 @@
 
 
     a {
+        color: mintcream;
         display: flex;
         gap: 35px;
         width: 28px;
         height: 28px;
         padding: 5px;
+        text-decoration: none;
     }
 
     a:hover {
-        border-radius: 5px;
+        border-radius: 8px;
         background-color: rgba(91, 138, 228, 0.34);
     }
+
+.badge-block {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+img {
+    margin: auto;
+}
+
+.message-icon {
+    margin-left: -2px;
+    height: 20px;
+}
 
 .left-bar-icon {
     width: 17px;
     height: 17px;
-
 }
 
 .description {
     white-space: nowrap;
 }
 
-.message-icon {
-    position: relative;
-}
-
 .message-badge {
-    background-color: rgba(2, 172, 172, 1);
-    margin-top: 40px;
+    margin-left: 22px;
     font-size: .6rem;
     cursor: default;
+    background-color: rgba(2, 172, 172, 1);
 }
 
 p {

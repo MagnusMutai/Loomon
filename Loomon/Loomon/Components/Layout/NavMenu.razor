@@ -4,7 +4,7 @@
     <ChildContent>
 
         <a @onclick="ToggleSidebar" class="nav-toggler">
-            <img class="left-bar-icon" src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <img style="width: 15px; height: 15px;" src="/icons/left-bar/leftbar-toggle.svg" alt="">
         </a>
 
         <div class="top-bar-icons">
@@ -14,7 +14,7 @@
             </a>
             <a @onclick="ToggleSidebar" class="">
                 <div class="badge-block">
-                    <img class="message-icon" style="height: 20px;" src="/icons/left-bar/double-chat-icon.svg" alt="">
+                    <img class="message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
                     <span class="e-badge e-badge-overlap e-badge-circle message-badge"><p>99+</p></span>
                     <span class="description">Archived Chats</span>
                 </div>
@@ -23,7 +23,7 @@
                 <img style="height: 17px;" src="/icons/left-bar/phone-icon.svg" alt="">
             </a>
             <a @onclick="ToggleSidebar">
-                <img src="/icons/left-bar/starred-message-icon.svg" alt="">
+                <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="">
             </a>
         </div>
 
@@ -44,8 +44,10 @@
         background-color: rgba(0, 0, 0, 0.9);
         color: beige;
         overflow: hidden;
+        height: 100vh;
         border-radius: 15px 0 0 15px;
         border-right: 1px solid #1B7794;
+    }
     }
 </style>
 
