@@ -1,21 +1,12 @@
-::deep #LeftBar {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: beige;
-    overflow: hidden;
-    height: 100vh;
-    border-radius: 15px 0 0 15px;
-    border-right: 1px solid #1B7794;
-}
-
 .nav-toggler {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 10px;
 }
 
 .top-bar-icons {
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 10px;
     display: flex;
     flex-direction: column;
@@ -37,7 +28,7 @@
         color: mintcream;
         display: flex;
         gap: 35px;
-        width: 28px;
+        width: 128px;
         height: 28px;
         padding: 5px;
         text-decoration: none;
@@ -51,7 +42,7 @@
 .badge-block {
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 34px;
 }
 
 img {
@@ -70,6 +61,13 @@ img {
 
 .description {
     white-space: nowrap;
+}
+
+.desc-cover:hover {
+    min-width: 130px;
+    height: 28px;
+    background-color: rgba(91, 138, 228, 0.34);
+    border-radius: 0 5px 5px 0;
 }
 
 .message-badge {

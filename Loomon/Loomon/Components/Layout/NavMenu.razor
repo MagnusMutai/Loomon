@@ -1,6 +1,6 @@
 ﻿@rendermode InteractiveServer
 
-<SfSidebar ID="LeftBar" Width="250px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
+<SfSidebar ID="LeftBar" Width="220px" @bind-IsOpen="isSidebarOpen" DockSize="50px" EnableDock="true">
     <ChildContent>
 
         <a @onclick="ToggleSidebar" class="nav-toggler">
@@ -8,35 +8,40 @@
         </a>
 
         <div class="top-bar-icons">
-            <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt=""> 
-                <span class="description">Archived Chats</span>
-            </a>
             <a @onclick="ToggleSidebar" class="">
                 <div class="badge-block">
                     <img class="message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
                     <span class="e-badge e-badge-overlap e-badge-circle message-badge"><p>99+</p></span>
-                    <span class="description">Archived Chats</span>
+                    <span class="description">Chats</span>
                 </div>
             </a>
             <a @onclick="ToggleSidebar">
                 <img style="height: 17px;" src="/icons/left-bar/phone-icon.svg" alt="">
+                <span class="description">Calls</span>
+            </a>
+            <a @onclick="ToggleSidebar">
+                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt=""> 
+                <span class="desc-cover">
+                    <span class="description">Archived Chats</span>
+                </span>
             </a>
             <a @onclick="ToggleSidebar">
                 <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="">
+                <span class="description">Starred</span>
             </a>
         </div>
 
         <div class="bottom-bar-icons">
             <a @onclick="ToggleSidebar">
                 <img style="width: 17px;" src="/icons/left-bar/settings-icon.svg" alt="">
+                <span class="description">Settings</span>
             </a>
             <a @onclick="ToggleSidebar">
                 <img style="height: 17px;" src="/icons/left-bar/profile-icon.svg" alt="">
+                <span class="description">Profile</span>
             </a>
         </div>
 
-        <div style="text-align: center;" class="text-content"> Sidebar </div>
     </ChildContent>
 </SfSidebar>
 <style>
@@ -44,10 +49,8 @@
         background-color: rgba(0, 0, 0, 0.9);
         color: beige;
         overflow: hidden;
-        height: 100vh;
         border-radius: 15px 0 0 15px;
         border-right: 1px solid #1B7794;
-    }
     }
 </style>
 
