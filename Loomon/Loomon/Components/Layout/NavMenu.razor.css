@@ -24,17 +24,18 @@
 
 
 
-    a {
-        color: mintcream;
-        display: flex;
-        gap: 35px;
-        width: 128px;
-        height: 28px;
-        padding: 5px;
-        text-decoration: none;
-    }
+.icon-wrapper {
+    color: mintcream;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    width: 160px;
+    height: 30px;
+    padding: 5px;
+    text-decoration: none;
+}
 
-    a:hover {
+    .icon-wrapper:hover {
         border-radius: 8px;
         background-color: rgba(91, 138, 228, 0.34);
     }
@@ -43,10 +44,6 @@
     position: relative;
     display: flex;
     gap: 34px;
-}
-
-img {
-    margin: auto;
 }
 
 .message-icon {
@@ -61,13 +58,6 @@ img {
 
 .description {
     white-space: nowrap;
-}
-
-.desc-cover:hover {
-    min-width: 130px;
-    height: 28px;
-    background-color: rgba(91, 138, 228, 0.34);
-    border-radius: 0 5px 5px 0;
 }
 
 .message-badge {

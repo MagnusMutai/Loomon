@@ -4,40 +4,38 @@
     <ChildContent>
 
         <a @onclick="ToggleSidebar" class="nav-toggler">
-            <img style="width: 15px; height: 15px;" src="/icons/left-bar/leftbar-toggle.svg" alt="">
+            <img style="width: 15px; height: 15px;" src="/icons/left-bar/leftbar-toggle.svg" alt="toggle icon">
         </a>
 
         <div class="top-bar-icons">
-            <a @onclick="ToggleSidebar" class="">
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
                 <div class="badge-block">
-                    <img class="message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="">
+                    <img class="message-icon" src="/icons/left-bar/double-chat-icon.svg" alt="double chat icon">
                     <span class="e-badge e-badge-overlap e-badge-circle message-badge"><p>99+</p></span>
                     <span class="description">Chats</span>
                 </div>
             </a>
-            <a @onclick="ToggleSidebar">
-                <img style="height: 17px;" src="/icons/left-bar/phone-icon.svg" alt="">
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
+                <img style="height: 17px;" src="/icons/left-bar/phone-icon.svg" alt="phone icon">
                 <span class="description">Calls</span>
             </a>
-            <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt=""> 
-                <span class="desc-cover">
-                    <span class="description">Archived Chats</span>
-                </span>
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
+                <img class="left-bar-icon" src="/icons/left-bar/archive-icon.svg" alt="archive icon"> 
+                <span class="description">Archived Chats</span>
             </a>
-            <a @onclick="ToggleSidebar">
-                <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="">
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
+                <img class="left-bar-icon" src="/icons/left-bar/starred-message-icon.svg" alt="star icon">
                 <span class="description">Starred</span>
             </a>
         </div>
 
         <div class="bottom-bar-icons">
-            <a @onclick="ToggleSidebar">
-                <img style="width: 17px;" src="/icons/left-bar/settings-icon.svg" alt="">
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
+                <img style="width: 17px;" src="/icons/left-bar/settings-icon.svg" alt="settings icon">
                 <span class="description">Settings</span>
             </a>
-            <a @onclick="ToggleSidebar">
-                <img style="height: 17px;" src="/icons/left-bar/profile-icon.svg" alt="">
+            <a @onclick="ToggleSidebar" class="icon-wrapper">
+                <img style="height: 17px;" src="/icons/left-bar/profile-icon.svg" alt="profile icon">
                 <span class="description">Profile</span>
             </a>
         </div>
